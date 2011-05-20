@@ -997,3 +997,25 @@ ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
 Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
 Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
 Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat May 21 01:20:33 +0200 2011
+  [1m[36mMyFile Load (0.4ms)[0m  [1mSELECT "my_files".* FROM "my_files" LIMIT 1[0m
+  Processing by PagesController#main as HTML
+  [1m[35mCACHE (0.0ms)[0m  SELECT "my_files".* FROM "my_files" LIMIT 1
+Rendered pages/main.html.erb within layouts/application (3.1ms)
+Completed   in 10ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    5: 			<div id="not_logged_in">
+    6: 				<br />
+    7: 				<center><p class="lightgrey_none_large">Choose what file you wish to upload:</p></center>
+    8: 				<%= form_for @image, :html => {:multipart => true} do |f| %>
+    9: 					<%= f.error_messages %>
+    10: 					<%= f.label :name%>
+    11: 					<%= f.text_field :name%>
+  app/views/pages/main.html.erb:8:in `_app_views_pages_main_html_erb__862070657__621798768_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
