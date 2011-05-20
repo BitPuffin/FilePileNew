@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   
   def main
-      @image = MyFile.first
+      @image = MyFile.new
   end
   
   def filedisplay
