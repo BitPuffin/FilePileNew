@@ -1,0 +1,120 @@
+/*File Pile Layout*/
+/*Andreas Syr�n*/
+/*2011-04-27*/
+
+
+p{
+	font-size: 12px;
+	font-family: arial;
+}
+h1{
+	color:#ff9999;
+	font-size:18px;
+	font:arial;
+}
+div{
+}
+/*=================================IDs=================================*/
+#main_body{
+	background-color:#212121;
+}
+#wrapper{
+	width:900px;
+	margin: 50px auto 0px auto;
+	border:0px solid black;
+	height: 85%;
+}
+#margin{
+height: 16.5%;
+
+}
+#content{
+	width: 400px;
+	position: center;
+	border: 0px solid red;
+	padding: 0px;
+	border: 10px dotted #201313;
+	margin: 0px auto 0px auto;
+}
+#content_borderfix{
+	border: solid 1px #201313;
+	background-color:#262121;
+}
+#bar_background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:40px;
+	background-image: ("bar.png");
+	margin-left:auto;
+	margin-right:auto;
+	clear: both;
+	border: solid red 0px;
+	padding: 0px 0px 0px 0px;
+}
+#bar{
+	position: absolute;
+	top: -5;
+	left: 0;
+	width:100%;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	clear: both;
+	padding: 0px 0px 0px 0px;
+		border: solid red 0px;
+}
+#login{
+	position: absolute;
+		top: 0;
+		right: 5px;
+	padding: 10px 0px 0px 0px;
+	height:40px;
+	border: solid red 0px;
+}
+#logo{
+	clear: both;
+	float: up;
+	border: 0px;
+	height: 200px;
+	width: 547px;
+	padding: 0px;
+	margin: -30px auto 0% auto;
+}
+#not_logged_in{
+	width: 100%px;
+	margin: 0px auto 0px auto;
+	border: 0px solid red;
+}
+#not_logged_in_2{
+}
+#inputArea
+{
+    font-family: Arial, Sans-Serif;
+    font-size: 13px;
+    padding: 10px;
+}
+#inputArea input[type="text"]:focus, #inputArea textarea:focus
+{
+    background-image: none;
+    background-color: #efefff;
+    border: solid 0px #33677F;
+}
+/*=================================Classes=================================*/
+.lightgrey_none_normal{
+	color: #777777;
+	font-size: 12px;
+}
+.lightgrey_bold_normal{
+	color: #777777;
+	font-weight: bold;
+}
+.lightgrey_none_large{
+	color: #777777;
+	font-size: 18px;
+}
+.highlight{
+	color: #77ab77;
+	font-weight: bold;
+}
