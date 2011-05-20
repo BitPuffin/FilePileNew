@@ -6,6 +6,7 @@ gem 'rails', '3.0.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem "rmagick"
+gem "rake"
 gem 'sqlite3'
 gem 'carrierwave', '0.5.4' #File upload Gem
 gem 'nifty-generators', '0.4.6' #A gem for better generators. Not sure if it will be used though..

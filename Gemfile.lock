@@ -87,4 +87,5 @@ DEPENDENCIES
   heroku
   nifty-generators (= 0.4.6)
   rails (= 3.0.7)
+  rake
   sqlite3

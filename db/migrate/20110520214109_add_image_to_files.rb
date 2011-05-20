@@ -1,9 +1,9 @@
 class AddImageToFiles < ActiveRecord::Migration
   def self.up
-    add_column :files, :image, :string
+    create_table(:files) {|t| t.string :image}
   end
 
   def self.down
-    remove_column :files, :image
+    drop_table :files
   end
 end
