@@ -1,7 +1,7 @@
 Filepile::Application.routes.draw do
   
   root :to => 'pages#main' #sets the root url to /pages/main.html
-  match '/register' => 'pages#register'
+  match '/filedisplay' => 'pages#filedisplay'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

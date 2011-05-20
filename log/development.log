@@ -1,0 +1,142 @@
+
+
+Started GET "/" for 127.0.0.1 at Fri May 20 22:53:06 +0200 2011
+  Processing by PagesController#main as HTML
+Rendered pages/main.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jquery-1.4.2.js" for 127.0.0.1 at Fri May 20 22:53:07 +0200 2011
+
+ActionController::RoutingError (No route matches "/jquery-1.4.2.js"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/button.png" for 127.0.0.1 at Fri May 20 22:53:07 +0200 2011
+
+ActionController::RoutingError (No route matches "/button.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/register" for 127.0.0.1 at Fri May 20 22:53:10 +0200 2011
+  Processing by PagesController#register as HTML
+Rendered pages/register.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jquery-1.4.2.js" for 127.0.0.1 at Fri May 20 22:53:11 +0200 2011
+
+ActionController::RoutingError (No route matches "/jquery-1.4.2.js"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 20 22:58:51 +0200 2011
+  Processing by PagesController#main as HTML
+Rendered pages/main.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jquery-1.4.2.js" for 127.0.0.1 at Fri May 20 22:58:52 +0200 2011
+
+ActionController::RoutingError (No route matches "/jquery-1.4.2.js"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/button.png" for 127.0.0.1 at Fri May 20 22:58:52 +0200 2011
+
+ActionController::RoutingError (No route matches "/button.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/filedisplay" for 127.0.0.1 at Fri May 20 22:58:54 +0200 2011
+  Processing by PagesController#filedisplay as HTML
+Rendered pages/filedisplay.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jquery-1.4.2.js" for 127.0.0.1 at Fri May 20 22:58:54 +0200 2011
+
+ActionController::RoutingError (No route matches "/jquery-1.4.2.js"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 20 22:59:15 +0200 2011
+  Processing by PagesController#main as HTML
+Rendered pages/main.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 20 22:59:26 +0200 2011
+  Processing by PagesController#main as HTML
+Rendered pages/main.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 59ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jquery-1.4.2.js" for 127.0.0.1 at Fri May 20 22:59:26 +0200 2011
+
+ActionController::RoutingError (No route matches "/jquery-1.4.2.js"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/button.png" for 127.0.0.1 at Fri May 20 22:59:26 +0200 2011
+
+ActionController::RoutingError (No route matches "/button.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 20 22:59:33 +0200 2011
+  Processing by PagesController#main as HTML
+Rendered pages/main.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jquery-1.4.2.js" for 127.0.0.1 at Fri May 20 22:59:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/jquery-1.4.2.js"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/button.png" for 127.0.0.1 at Fri May 20 22:59:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/button.png"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/filedisplay" for 127.0.0.1 at Fri May 20 22:59:34 +0200 2011
+  Processing by PagesController#filedisplay as HTML
+Rendered pages/filedisplay.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jquery-1.4.2.js" for 127.0.0.1 at Fri May 20 22:59:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/jquery-1.4.2.js"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri May 20 22:59:46 +0200 2011
+  Processing by PagesController#main as HTML
+Rendered pages/main.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
