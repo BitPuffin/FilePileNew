@@ -1,0 +1,20 @@
+<div id="margin">
+</div>
+	<div id="content">
+		<div id="content_borderfix">
+			<div id="not_logged_in">
+				<br />
+				<center><p class="lightgrey_none_large">Choose what file you wish to upload:</p></center>
+				<%= form_for @image, :html => {:multipart => true} do |f| %>
+					<%= f.error_messages %>
+					<%= #f.label :name%>
+					<%= #f.text_field :name%>
+					<%= f.file_field :image%>
+					<%= f.submit_tag "Upload!", :class => "button large"%>
+					<% end %>
+					
+				<br />
+				<br />
+			</div>
+	</div>
+</div>
