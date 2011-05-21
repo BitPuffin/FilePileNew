@@ -1,0 +1,257 @@
+/*File Pile Layout*/
+/*Andreas Syr�n*/
+/*2011-04-27*/
+
+
+p{
+  font-size: 12px;
+  font-family: arial;
+}
+h1{
+  color:#ff9999;
+  font-size:18px;
+  font:arial;
+}
+div{
+}
+/*=================================IDs=================================*/
+#main_body{
+  background-color:#212121;
+}
+#wrapper{
+  width:900px;
+  margin: 50px auto 0px auto;
+  border:0px solid black;
+  height: 85%;
+}
+#margin{
+height: 16.5%;
+
+}
+#content{
+  width: 400px;
+  position: center;
+  border: 0px solid red;
+  padding: 0px;
+  border: 10px dotted #201313;
+  margin: 0px auto 0px auto;
+}
+#content_borderfix{
+  border: solid 1px #201313;
+  background-color:#262121;
+}
+#bar_background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:40px;
+  background-image: ("bar.png");
+  margin-left:auto;
+  margin-right:auto;
+  clear: both;
+  border: solid red 0px;
+  padding: 0px 0px 0px 0px;
+}
+#bar{
+  position: absolute;
+  top: -5;
+  left: 0;
+  width:100%;
+  height:40px;
+  margin-left:auto;
+  margin-right:auto;
+  clear: both;
+  padding: 0px 0px 0px 0px;
+    border: solid red 0px;
+}
+#login{
+  position: absolute;
+    top: 0;
+    right: 5px;
+  padding: 10px 0px 0px 0px;
+  height:40px;
+  border: solid red 0px;
+}
+#logo{
+  clear: both;
+  float: up;
+  border: 0px;
+  height: 200px;
+  width: 547px;
+  padding: 0px;
+  margin: -30px auto 0% auto;
+}
+#not_logged_in{
+  width: 100%px;
+  margin: 0px auto 0px auto;
+  border: 0px solid red;
+}
+#not_logged_in_2{
+}
+#inputArea
+{
+    font-family: Arial, Sans-Serif;
+    font-size: 13px;
+    padding: 10px;
+}
+#inputArea input[type="text"]:focus, #inputArea textarea:focus
+{
+    background-image: none;
+    background-color: #efefff;
+    border: solid 0px #33677F;
+}
+/*=================================Classes=================================*/
+.lightgrey_none_normal{
+  color: #777777;
+  font-size: 12px;
+}
+.lightgrey_bold_normal{
+  color: #777777;
+  font-weight: bold;
+}
+.lightgrey_none_large{
+  color: #777777;
+  font-size: 18px;
+}
+.highlight{
+  color: #77ab77;
+  font-weight: bold;
+}
+
+/* The following code was originaly from "http://devgrow.com/super-simple-css-buttons/" */
+* {
+  margin: 0;
+  padding: 0;  /* Sets margin and padding to 0px for ALL elements on the site. */
+} 
+.button_body {
+  padding: 40px;
+  background: #eee;
+  font-family:
+  Verdana, Arial;
+  font-size: 12px;
+  line-height: 18px; 
+}
+.button_a {
+  text-decoration: none;
+}
+.button_h2, h3 {
+  margin: 0 0 20px;
+  text-shadow: 2px 2px #fff;
+  font-family: arial;
+}
+.Button_h2 { 
+  font-size: 28px;
+  font-family: arial;
+}
+.button_h3 { 
+  font-size: 22px;
+  font-family: arial;
+}
+.button_pre {
+  background: #fff;
+  width: 460px;
+  padding: 10px 20px;
+  border-left: 5px solid #ccc;
+  margin: 0 0 20px;
+  font-family: arial;
+}
+.button_p {
+  width: 500px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 30px; 
+  font-family: arial;
+}
+.button_input {
+  margin: 0; 
+  padding: 0; 
+}
+.button {
+  
+  padding: 5px 10px;
+  display: inline;
+  background: #777 url(button.png) repeat-x bottom;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-shadow: 1px 1px #666;
+  font-family: arial;
+  
+}
+.button:hover {
+  background-position: 0 center;
+}
+.button:active {
+  background-position: 0 top;
+  position: relative;
+  top: 1px;
+  padding: 6px 10px 4px;
+}
+.button.red {
+  background-color: #6C0000;
+}
+.button.purple {
+  background-color: #9400bf; 
+}
+.button.green {
+  background-color: #58aa00;
+}
+.button.orange {
+  background-color: #ff9c00;
+}
+.button.blue {
+  background-color: #2c6da0;
+}
+.button.black {
+  background-color: #333; 
+}
+.button.white {
+  background-color: #fff;
+  color: #000;
+  text-shadow: 1px 1px #fff;
+}
+.button.small { 
+  font-size: 75%;
+  padding: 3px 7px;
+}
+.button.small:active { 
+  padding: 4px 7px 2px;
+  background-position: 0 top;
+}
+.button.large { 
+  font-size: 250%;
+  padding: 14px 24px; 
+}
+.button.large:active { 
+  padding: 16px 24px 12px;
+  background-position: 0 top; 
+}
+.button.custom {
+  font-size: 500%; 
+  padding: 28px 48px; 
+}
+.button.custom:active { 
+  padding: 32px 48px 24px;
+  background-position: 0 top;
+}
+a:visited {
+  text-decoration: none;
+  text-color: 77ab77;
+}
+a:active {
+  text-decoration: none;
+  text-color: 77ab77;
+}
+a:hover {
+  text-decoration: underline ;
+  text-color: 77cc77;
+}
+a:link {
+  text-decoration: none;
+  text-color: 77ab77;
+}    
