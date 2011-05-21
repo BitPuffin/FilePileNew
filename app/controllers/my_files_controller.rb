@@ -1,10 +1,15 @@
 class PagesController < ApplicationController
   
   def index
-      @image = MyFile.new
+    @images = MyFile.all
+
   end
   
-  def filedisplay
+  def new
+    @image = MyFile.new
+  end
+  
+  def create
     
   end
   
