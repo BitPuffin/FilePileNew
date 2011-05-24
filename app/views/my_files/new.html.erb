@@ -5,10 +5,10 @@
     <div id="not_logged_in">
       <br />
       <center><p class="lightgrey_none_large">Choose what file you wish to upload:</p></center>
-      <%= form_for @image_file_name, :html => {:multipart => true} do |f| %>
+      <%= form_for @image, :html => {:multipart => true} do |f| %>
         <%= f.error_messages %>
         <%= f.file_field :image_file_name %>
-        <%= f.submit_tag "Upload!", :class => "button large" %>
+        <%= f.submit "Upload!", :class => "button large" %>
       <% end %>
       <br />
       <br />

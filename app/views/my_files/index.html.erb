@@ -1,5 +1,5 @@
-<% for image_file_name in @MyFile do %>
+<% for image in @MyFile do %>
   <div>
-    <%= image_tag @MyFile.image_file_name.url %>
+    <%= image_tag @MyFile.image.url %>
   </div>
 <% end %>

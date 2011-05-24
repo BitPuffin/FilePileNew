@@ -2,15 +2,15 @@
 <html>
   <head>
     <title>FilePile</title>
-      <%= javascript_include_tag 'http://code.jquery.com/jquery-latest.pack.js' # includes jquery from their website %> 
-      <%= javascript_include_tag 'application' # application's own javascript %>
-      <%= stylesheet_link_tag 'application' # links to the stylesheet in the public/stylesheets directory called main (it generates html code) %>
-      <%= csrf_meta_tag # prevents cross site request forgery to protect from hacking %>
+      <%= javascript_include_tag 'http://code.jquery.com/jquery-latest.pack.js' %> 
+      <%= javascript_include_tag "application"%>
+      <%= stylesheet_link_tag "application"%>
+      <%= csrf_meta_tag %>
   </head>
   <body id="main_body">
     <div id="wrapper">
       <div id="logo">
-        <center><%= image_tag ("logo.png", :height => "200px", :width => "547px") %></center>
+        <%= image_tag "logo.png", :height => "200px", :width => "547px" %>
       </div>
     </div>
     <%= yield %>
