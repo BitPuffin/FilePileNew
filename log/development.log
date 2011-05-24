@@ -5369,3 +5369,358 @@ Started GET "/" for 127.0.0.1 at Tue May 24 15:34:41 +0200 2011
   Processing by MyFilesController#new as HTML
 Rendered my_files/new.html.erb within layouts/application (13.8ms)
 Completed 200 OK in 32ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/papi/Dropbox/Frozen melonbox/App/FilePile/vendor/plugins/paperclip/rails/init.rb. (called from /home/papi/Dropbox/Frozen melonbox/App/FilePile/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 24 16:08:27 +0200 2011
+  Processing by MyFilesController#new as HTML
+Rendered my_files/new.html.erb within layouts/application (65.8ms)
+Completed 200 OK in 81ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:08:33 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb68ad548 @tempfile=#<File:/tmp/RackMultipart20110524-12628-1dnp3s7-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "my_files" ("image_file_name", "image_file_name_file_size", "image_file_name_updated_at", "image_file_name_file_name", "image_file_name_content_type", "image_file_size", "image", "image_content_type", "image_updated_at") VALUES ('--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 247ms
+
+ActionController::RoutingError (No route matches {:action=>"show_file", :controller=>"my_files"}):
+  app/controllers/my_files_controller.rb:14:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:10:54 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb66da52c @tempfile=#<File:/tmp/RackMultipart20110524-12628-7hat39-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mAREL (1.5ms)[0m  [1mINSERT INTO "my_files" ("image_file_name_file_size", "image_file_size", "image_content_type", "image_file_name", "image_file_name_updated_at", "image_file_name_file_name", "image_file_name_content_type", "image", "image_updated_at") VALUES (NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 234ms
+
+ActionController::RoutingError (No route matches {:action=>"show_file", :controller=>"my_files"}):
+  app/controllers/my_files_controller.rb:14:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:12:01 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓"}
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "my_files" ("image", "image_file_name_content_type", "image_file_name_file_size", "image_file_name_file_name", "image_updated_at", "image_file_size", "image_content_type", "image_file_name_updated_at", "image_file_name") VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 206ms
+
+ActionController::RoutingError (No route matches {:action=>"show_file", :controller=>"my_files"}):
+  app/controllers/my_files_controller.rb:14:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 24 16:13:51 +0200 2011
+  Processing by MyFilesController#new as HTML
+Rendered my_files/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 32ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:13:55 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb68f5564 @tempfile=#<File:/tmp/RackMultipart20110524-12628-xn2isf-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "my_files" ("image_file_name_updated_at", "image_file_name_file_name", "image_updated_at", "image_file_size", "image_file_name_content_type", "image", "image_file_name_file_size", "image_file_name", "image_content_type") VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL)[0m
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 148ms
+
+ActionController::RoutingError (No route matches {:action=>"show_file", :controller=>"my_files"}):
+  app/controllers/my_files_controller.rb:14:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:22:42 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb67b59ec @tempfile=#<File:/tmp/RackMultipart20110524-12628-1gbyjnl-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "my_files" ("image_file_size", "image_file_name_content_type", "image_updated_at", "image_file_name", "image", "image_file_name_file_size", "image_file_name_updated_at", "image_file_name_file_name", "image_content_type") VALUES (NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL, NULL)
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 140ms
+
+ActionController::RoutingError (No route matches {:action=>"show_file", :controller=>"my_files"}):
+  app/controllers/my_files_controller.rb:14:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:23:40 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb66a38ec @tempfile=#<File:/tmp/RackMultipart20110524-12628-1dkcp2r-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "my_files" ("image_content_type", "image_file_name_content_type", "image", "image_file_name_file_size", "image_file_name_updated_at", "image_file_size", "image_updated_at", "image_file_name_file_name", "image_file_name") VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+')[0m
+[paperclip] Saving attachments.
+Completed   in 131ms
+
+NameError (undefined local variable or method `show_file' for #<MyFilesController:0xb66a9044>):
+  app/controllers/my_files_controller.rb:14:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.1ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.5ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:23:56 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb68ac0a8 @tempfile=#<File:/tmp/RackMultipart20110524-12628-1m6281q-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "my_files" ("image_file_size", "image_file_name_content_type", "image_file_name_file_size", "image_content_type", "image_updated_at", "image_file_name_file_name", "image", "image_file_name", "image_file_name_updated_at") VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL)
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 143ms
+
+NoMethodError (undefined method `show_file_url' for #<MyFilesController:0xb68b2a98>):
+  app/controllers/my_files_controller.rb:14:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:25:41 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb6710e38 @tempfile=#<File:/tmp/RackMultipart20110524-12628-mfb693-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mAREL (4.8ms)[0m  [1mINSERT INTO "my_files" ("image_file_name_updated_at", "image_file_size", "image_file_name_file_name", "image_file_name_content_type", "image_file_name", "image_file_name_file_size", "image", "image_updated_at", "image_content_type") VALUES (NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 266ms
+
+NoMethodError (undefined method `show_file_url' for #<MyFilesController:0xb671b720>):
+  app/controllers/my_files_controller.rb:18:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:26:32 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb68a6720 @tempfile=#<File:/tmp/RackMultipart20110524-12628-dsc1vn-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "my_files" ("image_file_name_updated_at", "image_file_name_content_type", "image", "image_file_size", "image_file_name", "image_file_name_file_size", "image_file_name_file_name", "image_content_type", "image_updated_at") VALUES (NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL)
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 203ms
+
+NoMethodError (undefined method `show_file_url' for #<MyFilesController:0xb68abd38>):
+  app/controllers/my_files_controller.rb:18:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:26:47 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb66f6b78 @tempfile=#<File:/tmp/RackMultipart20110524-12628-134sr2i-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "my_files" ("image_file_name_file_name", "image_content_type", "image_file_name", "image_file_name_updated_at", "image_file_size", "image_updated_at", "image_file_name_content_type", "image", "image_file_name_file_size") VALUES (NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 159ms
+
+NoMethodError (undefined method `show_file_url' for #<MyFilesController:0xb6708698>):
+  app/controllers/my_files_controller.rb:18:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:28:46 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb68a4934 @tempfile=#<File:/tmp/RackMultipart20110524-12628-1k5hik0-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "my_files" ("image", "image_updated_at", "image_file_size", "image_file_name_content_type", "image_file_name", "image_file_name_updated_at", "image_file_name_file_name", "image_content_type", "image_file_name_file_size") VALUES (NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL)
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 175ms
+
+NoMethodError (undefined method `show_file_url' for #<MyFilesController:0xb68a9fd8>):
+  app/controllers/my_files_controller.rb:18:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started GET "/my_files" for 127.0.0.1 at Tue May 24 16:29:08 +0200 2011
+  Processing by MyFilesController#index as HTML
+  [1m[36mMyFile Load (3.1ms)[0m  [1mSELECT "my_files".* FROM "my_files"[0m
+Rendered my_files/index.html.erb within layouts/application (3.3ms)
+Completed   in 27ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: <% for image in @MyFile do %>
+    2:   <div>
+    3:     <%= image_tag @MyFile.image.url %>
+    4:   </div>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb__926354522__617215498_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (70.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (76.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 24 16:29:23 +0200 2011
+  Processing by MyFilesController#new as HTML
+Rendered my_files/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 48ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:29:28 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb67a6e88 @tempfile=#<File:/tmp/RackMultipart20110524-12628-hxmw4h-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "my_files" ("image_file_name_file_size", "image_file_name_updated_at", "image", "image_updated_at", "image_file_size", "image_file_name_content_type", "image_file_name", "image_content_type", "image_file_name_file_name") VALUES (NULL, NULL, NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL)
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 176ms
+
+ActionController::RoutingError (No route matches {:action=>"show_file", :controller=>"my_files"}):
+  app/controllers/my_files_controller.rb:18:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/papi/Dropbox/Frozen melonbox/App/FilePile/vendor/plugins/paperclip/rails/init.rb. (called from /home/papi/Dropbox/Frozen melonbox/App/FilePile/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 24 16:30:31 +0200 2011
+  Processing by MyFilesController#new as HTML
+Rendered my_files/new.html.erb within layouts/application (69.3ms)
+Completed 200 OK in 86ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:30:35 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb690fd10 @tempfile=#<File:/tmp/RackMultipart20110524-12880-xr4c0u-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (5.2ms)[0m  INSERT INTO "my_files" ("image_file_name", "image_file_name_content_type", "image_updated_at", "image_file_size", "image_content_type", "image_file_name_file_name", "image_file_name_file_size", "image", "image_file_name_updated_at") VALUES ('--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[paperclip] Saving attachments.
+Redirected to 
+Completed   in 215ms
+
+ActionController::RoutingError (No route matches {:action=>"show_file", :controller=>"my_files"}):
+  app/controllers/my_files_controller.rb:18:in `create'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
