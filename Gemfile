@@ -6,9 +6,9 @@ gem 'rails', '3.0.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "rmagick"
+gem "paperclip"
 gem "rake"
 gem 'sqlite3'
-gem 'carrierwave', '0.5.4' # File upload Gem
 gem 'nifty-generators', '0.4.6' # A gem for better generators. Not sure if it will be used though..
 gem "heroku" # Because we'll probably deploy the app at heroku so you can try it without installing rails!
              # Just for you our lovely teacher <3

@@ -1,3 +1,3 @@
 class MyFile < ActiveRecord::Base
-  mount_uploader :image, ImageUploader
+  has_attached_file :image_file_name
 end
