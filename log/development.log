@@ -5724,3 +5724,477 @@ ActionController::RoutingError (No route matches {:action=>"show_file", :control
   app/controllers/my_files_controller.rb:18:in `create'
 
 Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/papi/Dropbox/Frozen melonbox/App/FilePile/vendor/plugins/paperclip/rails/init.rb. (called from /home/papi/Dropbox/Frozen melonbox/App/FilePile/config/environment.rb:5)
+
+
+Started GET "/my_files" for 127.0.0.1 at Tue May 24 16:56:52 +0200 2011
+  Processing by MyFilesController#index as HTML
+  [1m[36mMyFile Load (1.1ms)[0m  [1mSELECT "my_files".* FROM "my_files"[0m
+Rendered my_files/index.html.erb within layouts/application (3.2ms)
+Completed   in 41ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: <% for image in @MyFile do %>
+    2:   <div>
+    3:     <%= image_tag @MyFile.image.url %>
+    4:   </div>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb__926354522__618250208_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 24 16:56:58 +0200 2011
+  Processing by MyFilesController#new as HTML
+Rendered my_files/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 33ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:57:01 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb6740e94 @tempfile=#<File:/tmp/RackMultipart20110524-13327-eisnnh-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "my_files" ("image", "image_content_type", "image_file_size", "image_file_name_file_name", "image_file_name", "image_file_name_content_type", "image_updated_at", "image_file_name_updated_at", "image_file_name_file_size") VALUES (NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 252ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Tue May 24 16:57:02 +0200 2011
+  Processing by MyFilesController#index as HTML
+  [1m[35mMyFile Load (1.0ms)[0m  SELECT "my_files".* FROM "my_files"
+Rendered my_files/index.html.erb within layouts/application (0.6ms)
+Completed   in 21ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: <% for image in @MyFile do %>
+    2:   <div>
+    3:     <%= image_tag @MyFile.image.url %>
+    4:   </div>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb__926354522__616448718_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (22.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.8ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 16:59:53 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb66c94fc @tempfile=#<File:/tmp/RackMultipart20110524-13327-14avjln-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mAREL (2.1ms)[0m  [1mINSERT INTO "my_files" ("image_file_name_file_size", "image_content_type", "image_updated_at", "image_file_name", "image_file_size", "image_file_name_file_name", "image_file_name_updated_at", "image", "image_file_name_content_type") VALUES (NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 167ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Tue May 24 16:59:53 +0200 2011
+  Processing by MyFilesController#index as HTML
+  [1m[35mMyFile Load (1.2ms)[0m  SELECT "my_files".* FROM "my_files"
+Rendered my_files/index.html.erb within layouts/application (0.6ms)
+Completed   in 80ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1: <% for image in @MyFile do %>
+    2:   <div>
+    3:     <%= image_tag @image.url %>
+    4:   </div>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb__926354522__616058948_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.7ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.1ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 17:00:20 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb6771594 @tempfile=#<File:/tmp/RackMultipart20110524-13327-1mqmjqf-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "my_files" ("image_updated_at", "image_file_size", "image_file_name_updated_at", "image_file_name_file_size", "image_file_name_content_type", "image_file_name", "image", "image_file_name_file_name", "image_content_type") VALUES (NULL, NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 173ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Tue May 24 17:00:21 +0200 2011
+  Processing by MyFilesController#index as HTML
+  [1m[35mMyFile Load (1.5ms)[0m  SELECT "my_files".* FROM "my_files"
+Rendered my_files/index.html.erb within layouts/application (0.5ms)
+Completed   in 19ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    1:     <%= image_tag @MyFile.image.url %>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb__926354522__617365548_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (79.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (85.8ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 17:03:02 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb688b5b0 @tempfile=#<File:/tmp/RackMultipart20110524-13327-1k4hbim-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mAREL (3.8ms)[0m  [1mINSERT INTO "my_files" ("image_file_name", "image_content_type", "image_file_size", "image_file_name_content_type", "image_file_name_file_name", "image_updated_at", "image", "image_file_name_file_size", "image_file_name_updated_at") VALUES ('--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 189ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Tue May 24 17:03:03 +0200 2011
+  Processing by MyFilesController#index as HTML
+  [1m[35mMyFile Load (1.5ms)[0m  SELECT "my_files".* FROM "my_files"
+Rendered my_files/index.html.erb within layouts/application (0.5ms)
+Completed   in 20ms
+
+ActionView::Template::Error (undefined method `images' for nil:NilClass):
+    1: <%= image_tag @MyFile.images.url %>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb__926354522__616830658_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (23.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.2ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Tue May 24 17:05:08 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"+XuzFNEHOYknnEddhEY6brwecBq1pH9uN+gePKPLHvU=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb68cdac8 @tempfile=#<File:/tmp/RackMultipart20110524-13327-1nq8zro-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @content_type="image/png", @original_filename="1305742639_coffee-cup.png">}}
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "my_files" ("image_updated_at", "image_file_name_updated_at", "image_file_size", "image_file_name", "image", "image_file_name_file_name", "image_file_name_file_size", "image_content_type", "image_file_name_content_type") VALUES (NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="1305742639_coffee-cup.png"
+ Content-Type: image/png
+
+original_filename: 1305742639_coffee-cup.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 152ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Tue May 24 17:05:08 +0200 2011
+  Processing by MyFilesController#index as HTML
+Rendered my_files/index.html.erb within layouts/application (0.5ms)
+Completed   in 16ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    1: <%= image_tag @MyFile.image.url %>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb__926354522__616563688_0'
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.6ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 24 17:35:42 +0200 2011
+  Processing by MyFilesController#new as HTML
+Rendered my_files/new.html.erb within layouts/application (68.2ms)
+Completed 200 OK in 89ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: C:/Users/Bertil/Documents/My Dropbox/Frozen melonbox/App/filepile/vendor/plugins/paperclip/rails/init.rb. (called from C:/Users/Bertil/Documents/My Dropbox/Frozen melonbox/App/filepile/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 25 12:48:04 +0200 2011
+  Processing by MyFilesController#new as HTML
+Rendered my_files/new.html.erb within layouts/application (160.0ms)
+Completed 200 OK in 242ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Wed May 25 12:48:21 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"BM52+CD/H7L8Mc/UdCdDLzTQo9WtDVJz63YwH8duYyI=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0x7905a38 @content_type="image/png", @tempfile=#<File:C:/Users/Bertil/AppData/Local/Temp/RackMultipart20110525-4964-6smdue-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"plane.png\"\r\nContent-Type: image/png\r\n", @original_filename="plane.png">}}
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "my_files" ("image_updated_at", "image_file_name_file_name", "image_file_name_content_type", "image_content_type", "image", "image_file_name_file_size", "image_file_name_updated_at", "image_file_size", "image_file_name") VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="plane.png"
+ Content-Type: image/png
+
+original_filename: plane.png
+tempfile: !ruby/object:File {}
+
+')
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 750ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Wed May 25 12:48:22 +0200 2011
+  Processing by MyFilesController#index as HTML
+Rendered my_files/index.html.erb within layouts/application (53.0ms)
+Completed   in 120ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    1: <%= image_tag @MyFile.image.url %>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb___3979613_64124904_0'
+
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (81.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Wed May 25 12:48:54 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"BM52+CD/H7L8Mc/UdCdDLzTQo9WtDVJz63YwH8duYyI=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0x7817538 @content_type="image/png", @tempfile=#<File:C:/Users/Bertil/AppData/Local/Temp/RackMultipart20110525-4964-8rd4jp-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"plane.png\"\r\nContent-Type: image/png\r\n", @original_filename="plane.png">}}
+  [1m[36mAREL (5.0ms)[0m  [1mINSERT INTO "my_files" ("image_file_name_content_type", "image_updated_at", "image", "image_file_name_file_size", "image_content_type", "image_file_size", "image_file_name", "image_file_name_file_name", "image_file_name_updated_at") VALUES (NULL, NULL, NULL, NULL, NULL, NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="plane.png"
+ Content-Type: image/png
+
+original_filename: plane.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 72ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Wed May 25 12:48:54 +0200 2011
+  Processing by MyFilesController#index as HTML
+Rendered my_files/index.html.erb within layouts/application (1.0ms)
+Completed   in 62ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    1: <%= image_tag @MyFile.image.url %>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb___3979613_62349900_0'
+
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Wed May 25 12:50:15 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"BM52+CD/H7L8Mc/UdCdDLzTQo9WtDVJz63YwH8duYyI=", "utf8"=>"✓"}
+  [1m[35mAREL (2.0ms)[0m  INSERT INTO "my_files" ("image_file_size", "image_file_name", "image_file_name_updated_at", "image", "image_updated_at", "image_content_type", "image_file_name_content_type", "image_file_name_file_name", "image_file_name_file_size") VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 41ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Wed May 25 12:50:15 +0200 2011
+  Processing by MyFilesController#index as HTML
+Rendered my_files/index.html.erb within layouts/application (1.0ms)
+Completed   in 60ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    1: <%= image_tag @MyFile.image.url %>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb___3979613_63633852_0'
+
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Wed May 25 12:50:38 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"BM52+CD/H7L8Mc/UdCdDLzTQo9WtDVJz63YwH8duYyI=", "utf8"=>"✓"}
+  [1m[36mAREL (2.0ms)[0m  [1mINSERT INTO "my_files" ("image_file_name_updated_at", "image_content_type", "image_file_name", "image", "image_updated_at", "image_file_name_file_size", "image_file_size", "image_file_name_content_type", "image_file_name_file_name") VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 41ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Wed May 25 12:50:38 +0200 2011
+  Processing by MyFilesController#index as HTML
+Rendered my_files/index.html.erb within layouts/application (1.0ms)
+Completed   in 60ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    1: <%= image_tag @MyFile.image.url %>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb___3979613_62210352_0'
+
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (92.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at Wed May 25 12:59:51 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"BM52+CD/H7L8Mc/UdCdDLzTQo9WtDVJz63YwH8duYyI=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0x7a7e358 @content_type="image/png", @tempfile=#<File:C:/Users/Bertil/AppData/Local/Temp/RackMultipart20110525-4964-4pvfbq-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"plane.png\"\r\nContent-Type: image/png\r\n", @original_filename="plane.png">}}
+  [1m[35mAREL (2.0ms)[0m  INSERT INTO "my_files" ("image_updated_at", "image_file_name", "image", "image_file_name_updated_at", "image_file_name_content_type", "image_content_type", "image_file_size", "image_file_name_file_name", "image_file_name_file_size") VALUES (NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="plane.png"
+ Content-Type: image/png
+
+original_filename: plane.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 40ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Wed May 25 12:59:51 +0200 2011
+  Processing by MyFilesController#index as HTML
+Rendered my_files/index.html.erb within layouts/application (0.0ms)
+Completed   in 67ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    1: <%= image_tag @MyFile.image.url %>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb___3979613_63394224_0'
+
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.0ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: C:/Users/Bertil/Documents/My Dropbox/Frozen melonbox/App/filepile/vendor/plugins/paperclip/rails/init.rb. (called from C:/Users/Bertil/Documents/My Dropbox/Frozen melonbox/App/filepile/config/environment.rb:5)
+
+
+Started POST "/my_files" for 127.0.0.1 at Wed May 25 14:18:20 +0200 2011
+  Processing by MyFilesController#create as HTML
+  Parameters: {"commit"=>"Upload!", "authenticity_token"=>"BM52+CD/H7L8Mc/UdCdDLzTQo9WtDVJz63YwH8duYyI=", "utf8"=>"✓", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0x7a6b008 @content_type="image/png", @tempfile=#<File:C:/Users/Bertil/AppData/Local/Temp/RackMultipart20110525-808-15zbzga-0>, @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"red_button_REGISTER.png\"\r\nContent-Type: image/png\r\n", @original_filename="red_button_REGISTER.png">}}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "my_files" ("image_file_name_file_name", "image_file_name", "image_updated_at", "image_file_size", "image", "image_file_name_content_type", "image_file_name_file_size", "image_file_name_updated_at", "image_content_type") VALUES (NULL, '--- !ruby/object:ActionDispatch::Http::UploadedFile 
+content_type: image/png
+headers: |
+ Content-Disposition: form-data; name="my_file[image_file_name]"; filename="red_button_REGISTER.png"
+ Content-Type: image/png
+
+original_filename: red_button_REGISTER.png
+tempfile: !ruby/object:File {}
+
+', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/my_files
+Completed 302 Found in 238ms
+
+
+Started GET "/my_files" for 127.0.0.1 at Wed May 25 14:18:28 +0200 2011
+  Processing by MyFilesController#index as HTML
+Rendered my_files/index.html.erb within layouts/application (23.0ms)
+Completed   in 87ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    1: <%= image_tag @MyFile.image.url %>
+  app/views/my_files/index.html.erb:1:in `_app_views_my_files_index_html_erb___3979613_63030072_0'
+
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered C:/RailsInstaller/Ruby1.8.7/lib/ruby/gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.0ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/papi/Dropbox/Frozen melonbox/App/FilePile/vendor/plugins/paperclip/rails/init.rb. (called from <top (required)> at /home/papi/Dropbox/Frozen melonbox/App/FilePile/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-26 02:07:48 +0200
+  Processing by MyFilesController#new as HTML
+Rendered my_files/new.html.erb within layouts/application (145.8ms)
+Completed 200 OK in 208ms (Views: 170.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at 2011-05-26 02:14:41 +0200
+  Processing by MyFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2eSmLWD7GXsyMcUL6og2TdQtfq7g8Jo++kqmZSZQF7I=", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb2e0ddc @original_filename="1305742639_coffee-cup.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"1305742639_coffee-cup.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20110526-11106-adbr3>>}, "commit"=>"Upload!"}
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed   in 125ms
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/my_files_controller.rb:12:in `create'
+
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (30.7ms)
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.6ms)
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/papi/Dropbox/Frozen melonbox/App/FilePile/vendor/plugins/paperclip/rails/init.rb. (called from <top (required)> at /home/papi/Dropbox/Frozen melonbox/App/FilePile/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2011-05-27 13:29:51 +0200
+  Processing by MyFilesController#new as HTML
+Rendered my_files/new.html.erb within layouts/application (123.0ms)
+Completed 200 OK in 206ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at 2011-05-27 13:30:38 +0200
+  Processing by MyFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EcYjXO9oE8MIusQDsPKIU3MeaSUvuN+CT/UYyRieUAc=", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb695f888 @original_filename="350px-Wiktionary_small.svg.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"350px-Wiktionary_small.svg.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20110527-7273-132xrr4>>}, "commit"=>"Upload!"}
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed   in 280ms
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/my_files_controller.rb:12:in `create'
+
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (31.3ms)
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.5ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at 2011-05-27 13:46:14 +0200
+  Processing by MyFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EcYjXO9oE8MIusQDsPKIU3MeaSUvuN+CT/UYyRieUAc=", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb67dcab0 @original_filename="350px-Wiktionary_small.svg.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"350px-Wiktionary_small.svg.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20110527-7273-17rkulw>>}, "commit"=>"Upload!"}
+Completed   in 25ms
+
+NoMethodError (undefined method `name=' for #<MyFile:0xb67a5d80>):
+  app/controllers/my_files_controller.rb:12:in `create'
+
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
+
+
+Started POST "/my_files" for 127.0.0.1 at 2011-05-27 14:04:48 +0200
+  Processing by MyFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EcYjXO9oE8MIusQDsPKIU3MeaSUvuN+CT/UYyRieUAc=", "my_file"=>{"image_file_name"=>#<ActionDispatch::Http::UploadedFile:0xb655bc28 @original_filename="350px-Wiktionary_small.svg.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"my_file[image_file_name]\"; filename=\"350px-Wiktionary_small.svg.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20110527-7273-17mamdr>>}, "commit"=>"Upload!"}
+Completed   in 84ms
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/my_files_controller.rb:12:in `create'
+
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /home/papi/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.6ms)
