@@ -18,7 +18,7 @@ class MyFilesController < ApplicationController
   end
   
   def show
-    MyFile.find(params[:id])
+    @image = MyFile.find(params[:id])
   end
   
 end
