@@ -6286,3 +6286,4 @@ Migrating to AddAttachmentImageFileNameToMyFile (20110521014914)
 [0m
   [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("files")
   [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("my_files")[0m
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/papi/Dropbox/Frozen melonbox/App/FilePile/vendor/plugins/paperclip/rails/init.rb. (called from <top (required)> at /home/papi/Dropbox/Frozen melonbox/App/FilePile/config/environment.rb:5)
