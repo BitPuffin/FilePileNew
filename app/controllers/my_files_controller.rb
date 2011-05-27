@@ -1,6 +1,6 @@
 class MyFilesController < ApplicationController
   def index
-    @image = MyFile.id
+    @image = MyFile.find(params[:id])
   end
   
   def new

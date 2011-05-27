@@ -6242,3 +6242,47 @@ Migrating to AddAttachmentImageFileNameToMyFile (20110521014914)
 [0m
   [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("files")
   [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("my_files")[0m
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/papi/Dropbox/Frozen melonbox/App/FilePile/vendor/plugins/paperclip/rails/init.rb. (called from <top (required)> at /home/papi/Dropbox/Frozen melonbox/App/FilePile/config/environment.rb:5)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to AddAttachmentImageFileNameToMyFile (20110521014914)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("files")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("my_files")[0m
+DEPRECATION WARNING: Use toplevel init.rb; rails/init.rb is deprecated: /home/papi/Dropbox/Frozen melonbox/App/FilePile/vendor/plugins/paperclip/rails/init.rb. (called from <top (required)> at /home/papi/Dropbox/Frozen melonbox/App/FilePile/config/environment.rb:5)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to AddAttachmentImageFileNameToMyFile (20110521014914)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("files")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("my_files")[0m
