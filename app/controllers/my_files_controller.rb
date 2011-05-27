@@ -1,6 +1,6 @@
 class MyFilesController < ApplicationController
   def index
-    @image = MyFile.id
+    @image = MyFile.all
   end
   
   def new
@@ -11,7 +11,7 @@ class MyFilesController < ApplicationController
     @image = MyFile.new(params[:my_file])
       if @image.save
       flash[:notice] = "Image uploaded successfully."
-      redirect_to(:controller => :my_files, :action => :show, :id => @myfile.id)
+      redirect_to(:controller => :my_files, :action => :show, :id => @image.id)
     else
       render(:action => :new)
     end
